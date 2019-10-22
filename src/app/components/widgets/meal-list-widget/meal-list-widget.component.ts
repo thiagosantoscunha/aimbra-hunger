@@ -31,7 +31,6 @@ export class MealListWidgetComponent implements OnInit {
   }
 
   edit(d: MealModel) {
-    console.log(d);
   }
 
   sizeData(): number {

@@ -32,10 +32,9 @@ export class RefeicaoListComponent implements OnInit {
     this.service.getByData(new Date()).subscribe((meals: MealModel[]) => {
       if (meals) {
         this.meals = meals;
-        console.log(this.meals);
       }
     }, (error: HttpErrorResponse) => {
-        alert(error.error.message);
+        console.error(error.error.message);
     });
   }
 

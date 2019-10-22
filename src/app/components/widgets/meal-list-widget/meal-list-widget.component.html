@@ -15,7 +15,7 @@
       </form>
     </div>
     <div >
-      <ul class="client-list">
+      <ul class="client-list" *ngIf="data">
         <li *ngFor="let d of data" (click)="edit(d)">
           <span class="user-status">
             <img src="./assets/icons/coffee-cup.svg" *ngIf="d.tipoRefeicao.id === 1">
@@ -36,6 +36,7 @@
         </li>
 
       </ul>
+      <div class="alert alert-warning w-100" *ngIf="!data">Ninguém passou cartão ainda...</div>
     </div><!-- Our Clients Sec -->
   </div>
 

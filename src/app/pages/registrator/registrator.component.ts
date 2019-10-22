@@ -47,7 +47,7 @@ export class RegistratorComponent implements OnInit {
         this.meals = meals;
       }
     }, (error: HttpErrorResponse) => {
-      alert(error.error.mensagem);
+      console.error(error.error.mensagem);
     });
   }
 
