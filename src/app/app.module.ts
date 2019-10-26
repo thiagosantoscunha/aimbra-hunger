@@ -9,6 +9,7 @@ import { NavigationModule } from './shared/navigation/navigation.module';
 import { PagesModule } from './pages/pages.module';
 import { MenuSidebarModule } from './shared/menu-sidebar/menu-sidebar.module';
 import { FooterModule } from './shared/footer/footer.module';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,10 @@ import { FooterModule } from './shared/footer/footer.module';
     HttpClientModule,
     FooterModule
   ],
-  providers: [],
+  providers: [{
+    provide: LocationStrategy,
+    useClass: HashLocationStrategy
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

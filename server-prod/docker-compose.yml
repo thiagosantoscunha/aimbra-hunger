@@ -1,0 +1,15 @@
+version: '3'
+services:
+  httpd-server:
+    image: httpd
+    volumes:
+      - ./:/usr/local/apache2/htdocs/
+    ports:
+      - 8080:80
+  ae-postgresql:
+    image: postgres
+    environment:
+      POSTGRES_USER: 'postgres'
+      POSTGRES_PASSWORD: 'postgres'
+    ports:
+      - 5432:5432
