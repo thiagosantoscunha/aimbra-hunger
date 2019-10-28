@@ -21,10 +21,10 @@ const routes: Routes = [
     path: 'login',
     component: LoginComponent
   },
-  {
-    path: 'registrator',
-    component: RegistratorComponent
-  },
+  // {
+  //   path: 'registrator',
+  //   component: RegistratorComponent
+  // },
   {
     path: 'clients',
     component: ClientListComponent
