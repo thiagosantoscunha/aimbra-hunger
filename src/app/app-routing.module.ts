@@ -10,33 +10,33 @@ import { ClientFormComponent } from './pages/clients/client-form/client-form.com
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/clients',
+    redirectTo: '/registrator',
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
+  // {
+  //   path: 'home',
+  //   component: HomeComponent
+  // },
+  // {
+  //   path: 'login',
+  //   component: LoginComponent
+  // },
   {
     path: 'registrator',
     component: RegistratorComponent
   },
-  {
-    path: 'clients',
-    component: ClientListComponent
-  },
-  {
-    path: 'clients/new',
-    component: ClientFormComponent
-  },
-  {
-    path: 'clients/edit/:id',
-    component: ClientFormComponent
-  },
+  // {
+  //   path: 'clients',
+  //   component: ClientListComponent
+  // },
+  // {
+  //   path: 'clients/new',
+  //   component: ClientFormComponent
+  // },
+  // {
+  //   path: 'clients/edit/:id',
+  //   component: ClientFormComponent
+  // },
   // {
   //   path: 'clients',
   //   loadChildren: () => import(`./pages/clients/client-list/client-list.module`).then(m => m.ClientListModule)
