@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ClientListComponent } from './client-list.component';
-import { ClientRoutingModule } from '../clients-routing.module';
+// import { ClientRoutingModule } from '../clients-routing.module';
 import { ClientFormComponent } from '../client-form/client-form.component';
 import { HeaderContentPageModule } from 'src/app/shared/header-content-page/header-content-page.module';
 import { ClientFormModule } from '../client-form/client-form.module';
@@ -16,12 +16,13 @@ import { ClientListWidgetModule } from 'src/app/components/widgets/client-list-w
   ],
   imports: [
     CommonModule,
-    ClientRoutingModule,
+    // ClientRoutingModule,
     ClientFormModule,
     HeaderContentPageModule,
     DataTableModule,
     ClientListWidgetModule
   ],
+  exports: [ ClientListComponent],
   providers: [ClientService]
 })
 export class ClientListModule { }
