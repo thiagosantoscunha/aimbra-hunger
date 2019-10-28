@@ -13,14 +13,14 @@ const routes: Routes = [
     redirectTo: '/clients',
     pathMatch: 'full'
   },
-  {
-    path: 'home',
-    component: HomeComponent
-  },
-  {
-    path: 'login',
-    component: LoginComponent
-  },
+  // {
+  //   path: 'home',
+  //   component: HomeComponent
+  // },
+  // {
+  //   path: 'login',
+  //   component: LoginComponent
+  // },
   // {
   //   path: 'registrator',
   //   component: RegistratorComponent
